@@ -1,0 +1,54 @@
+body{
+    font-size: 16px;
+    line-height: 186%;
+    padding-top: 100px;
+}
+.container{
+    max-width: 1168px;
+    margin: 0 auto;
+}
+.slider {
+        &__img{
+        margin: 0 auto;
+        padding-bottom: 32px;
+    }
+    &__text{
+        background: #84A178;
+        border-radius: 24px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 39px 73px;
+        color: #FCFCFC;
+        max-width: 750px;
+        
+    }
+    &__name-geo{
+        text-align: center;
+        color: #131313;
+        margin: 32px 0 15px 0;
+    }
+}
+
+.slider .slick-dots li button{
+    color: #D9D9D9;
+
+}
+.slick-dots li.slick-active button:before{
+    color:#84A178 ;
+}
+@media(max-width:769px){
+    .container{
+        max-width: 705px;
+
+    }
+}
+@media(max-width:321px){
+    .container{
+        max-width: 280px;
+    }
+    .slider{
+        &__text{
+            // height: 355px;
+        }
+    }
+}
